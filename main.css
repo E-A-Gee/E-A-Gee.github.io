@@ -9,13 +9,13 @@ a {
     color:black !important;
 }
 
-h1, h2, p {
+h2, p, .console-text, .console-underscore {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-weight: 300;
     line-height: 1.65;
 }
 
-h1 {
+.console-text, .console-underscore {
     font-size: 10vh;
     letter-spacing: -0.05em;
 }
@@ -317,4 +317,16 @@ button,
         button.primary:active,
         .button.primary:active {
             background-color: #1ebdd1;
+        }
+
+        /* For the terminal underscore */
+        .hidden {
+          opacity:0;
+        }
+
+        .console-underscore {
+          display:inline-block;
+          position:relative;
+          top:-0.10em;
+          left:10px;
         }
